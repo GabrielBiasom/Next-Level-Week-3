@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: white;
+  background: #ebf2f5;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-primary-landing-body: rgb(0, 251, 255);
+  --bg: linear-gradient(
+    307deg,
+    rgba(0, 251, 255, 1) 0%,
+    rgba(226, 0, 255, 1) 100%
+  );
+  --color-primary-landing: linear-gradient(
+    to right,
+    #00c3ff 0%,
+    #ffff1c 51%,
+    #00c3ff 100%
+  );
+  --color-primary: rgb(149, 0, 255);
+  --color-primary-gradient: linear-gradient(
+    321deg,
+    rgba(149, 0, 255, 1) 0%,
+    rgba(226, 0, 255, 1) 33%,
+    rgba(228, 248, 35, 1) 66%,
+    rgba(0, 204, 255, 1) 100%
+  );
+
+  --color-text: #fff6a8;
+
+  --color-form-bg: rgb(253, 255, 132);
+  --color-text-form: #4d6f80;
+}
+
+body,
+input,
+button,
+textarea {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-family: "Nunito", sans-serif;
+
+  /* ou font: 400 18px/1 "Nunito", sans-serif; */
+}

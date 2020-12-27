@@ -1,0 +1,51 @@
+aside.sidebar {
+  position: fixed;
+  height: 100%;
+  padding: 3.2rem 2.4rem;
+  background: rgb(0, 251, 255);
+  background: var(--bg);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside.sidebar footer button {
+  width: 48px;
+  height: 48px;
+  border: none;
+
+  border-radius: 1.6rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 600ms;
+  outline: none;
+}
+
+.btn-grad {
+  background-image: var(--color-primary-landing);
+
+  margin: 10px;
+  padding: 20px 30px;
+
+  transition: 0.3s;
+  background-size: 200% auto;
+  color: white;
+
+  border-radius: 3rem;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.with-sidebar {
+  padding-left: 110px;
+}

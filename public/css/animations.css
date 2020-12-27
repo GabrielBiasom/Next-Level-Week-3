@@ -1,0 +1,167 @@
+/* ANIMAÇÕES */
+
+.animate-up {
+  animation-name: up;
+  animation-duration: 300ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#logo-face {
+  animation-fill-mode: backwards;
+  animation: face 1000ms alternate infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes face {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(3rem) scale(1.5);
+  }
+}
+
+.animate-right {
+  animation-name: right;
+  animation-duration: 300ms;
+  transition: 300ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#page-orphanage {
+  background: var(--color-primary);
+  background: var(--color-primary-gradient);
+
+  animation: moving 15s linear infinite;
+  background-size: 600%;
+}
+#page-create-orphanage {
+  background: var(--color-primary);
+  background: var(--color-primary-gradient);
+
+  animation: moving 15s linear infinite;
+  background-size: 600%;
+}
+@keyframes moving {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-appear {
+  animation-name: appear;
+  animation-duration: 300ms;
+  animation-fill-mode: backwards;
+}
+
+/* FACE ORPHANAGES */
+
+.logo-face {
+  animation-fill-mode: backwards;
+  animation: face 1000ms alternate infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes face {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: rotateX(30deg);
+  }
+
+  100% {
+    transform: translateY(8rem) scale(1.5) rotateX(-60deg);
+  }
+}
+
+/* ORPHANAGE */
+.images button:hover,
+.images button.active {
+  animation-fill-mode: forwards;
+  animation: imageUp 600ms linear;
+  transition: 600ms;
+}
+
+@keyframes imageUp {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-16px);
+  }
+}
+
+/* #modal-geral {
+  animation-name: modal;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+  transition: 600ms;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    border: 10px solid green;
+  }
+} */
+/* 
+.bordas {
+  animation-fill-mode: backwards;
+  animation: temporizador 5s linear;
+  transition: 600ms;
+}
+
+@keyframes temporizador {
+  from {
+    background-color: #3cff00;
+    
+  }
+  to {
+    background-color: #f0f9ff;
+    
+  }
+}
+ */

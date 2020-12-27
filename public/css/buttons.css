@@ -1,0 +1,84 @@
+:root {
+  --color-button: #3cdc8c;
+  --color-button-hover: #48ff9a;
+  --color-select-button:#faf5f5;
+  --color-select-button-active:#a9ffd4;
+}
+
+.primary-button {
+  margin-top: 6.4rem;
+
+  width: 100%;
+  height: 6.4rem;
+  border: 0;
+
+  cursor: pointer;
+
+  background: var(--color-button);
+  border-radius: 2rem;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 600ms;
+  outline: none;
+
+  text-decoration: none;
+}
+
+.primary-button:hover {
+  background: var(--color-button-hover);
+  box-shadow: 0 0 10px #00ff73, 0 0 20px #00ff73, 0 0 20px #00ff73;
+
+  transition: 600ms;
+  color: #007c3e;
+}
+
+.primary-button img {
+  margin-right: 1.6rem;
+}
+.button-select {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button-select button {
+  height: 6.4rem;
+  background-color: var(--color-select-button);
+
+  border: 2px solid #d3e2e5;
+  color: #5c8599;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-select button.active {
+  background: var(--color-select-button-active);
+  border: 2px solid #009e4f;
+  color: #00a552;
+  transition: 600ms;
+}
+
+.button-select button:first-child {
+  border-radius: 2rem 0 0 2rem;
+}
+
+.button-select button:last-child {
+  border-radius: 0 2rem 2rem 0;
+}
+
+/* 
+  
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  
+  
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  
+  
+  background-image: linear-gradient( 112.9deg,  rgba(112,255,151,1) 6.2%, rgba(70,195,255,1) 99.7% );
+  
+   */
